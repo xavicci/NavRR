@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { blogdata } from "../blogdata";
 
 interface PostType {
@@ -15,6 +15,8 @@ export const BlogPage = () => {
   return (
     <>
       <h1>BlogPage</h1>
+
+      <Outlet />
       <ul>
         {blogdata.map((post, index) => (
           <BlogLink key={index} post={post} />

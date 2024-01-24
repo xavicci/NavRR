@@ -67,3 +67,11 @@ routes.push({
   to: "/profile",
   text: "Profile",
 });
+routes.push({
+  to: "/login",
+  text: "LoginPage",
+});
+routes.push({
+  to: "/logout",
+  text: "LogOut",
+});
